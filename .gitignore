@@ -4,3 +4,9 @@ dist/
 *.log
 .env
 .env.*
+
+# Local / temp data tooling
+data.json
+scripts/_extract*
+scripts/_webpraktik_extract.json
+scripts/extract-inostudio.mjs

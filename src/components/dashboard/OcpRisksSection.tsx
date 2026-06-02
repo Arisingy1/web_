@@ -37,7 +37,7 @@ export function OcpRisksSection({
               <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fill: '#94a3b8', fontSize: 10 }} />
               <RechartsTooltip
                 contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                formatter={(value: number) => [`${value}`, 'Балл']}
+                    formatter={(value) => [`${value ?? 0}`, 'Балл']}
               />
               <Radar
                 name="Score"
