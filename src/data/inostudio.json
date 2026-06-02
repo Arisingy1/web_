@@ -1,0 +1,806 @@
+{
+  "artifact_metadata": {
+    "analyzed_documents": [
+      "Холакратия: Домены, Правила сотрудничества, Законодательный процесс",
+      "Холакратия: Операционный процесс и тактическая встреча",
+      "Регламент Код-ревью команды Razor и Definition of Done",
+      "Типовые вопросы по SS (Self-Organization & Substitution)",
+      "Вопросы к оценке 360 Иностудио"
+    ],
+    "total_text_volume_chars": 23500,
+    "confidence_score": 95
+  },
+  "general_info": {
+    "company_name": "Inostudio",
+    "industry": "IT / Tech",
+    "tone_of_voice": "Формальный / Регламентированный"
+  },
+  "authenticity_index": "High",
+  "authenticity_reason": "Документы содержат высокую детализацию реальных бизнес-процессов, метрик и операционных регламентов; декларации подкреплены конкретными процедурами и чек-листами.",
+  "executive_summary": {
+    "culture_uniqueness": "Уникальный беспрецедентный фокус на деперсонализации управления и переводе коммуникаций в строгие алгоритмы Холакратии. Все процессы от ведения совещаний до разрешения конфликтов очищены от эмоций и подчинены Конституции.",
+    "culture_type": "Процессно-инженерная Холакратия",
+    "key_findings": "Документы фиксируют завершенную фазу перехода от классической иерархии к ролевой структуре. Культурный код построен на безупречной прослеживаемости задач и абсолютном разграничении зон ответственности через домены.",
+    "dominant_values": [
+      "Приоритет процедурных правил над личным мнением",
+      "Неприкосновенность ролевых границ (доменов)",
+      "Обязательность взаимного информирования и прозрачности"
+    ],
+    "cultural_contradictions": [
+      "Декларируется полная свобода действий внутри домена роли, однако выполнение задач зажато в жесткие тиски чек-листов (DoD), тайм-трекинга и скриптов ведения встреч."
+    ]
+  },
+  "big_nine_detailed_analysis": {
+    "agility": {
+      "score": 65,
+      "summary": "Гибкость и адаптивность встроены в регламент, но ограничены строгими процедурами согласования.",
+      "modal_content": {
+        "detailed_gap_analysis": "Компания умеет ротировать ресурсы и проводить точечные эксперименты (PoC). Тем не менее, изменения ролей и доменов не могут происходить спонтанно — они требуют соблюдения строгого законодательного процесса и тестирования Возражений.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 1,
+            "name_en": "Flexibility",
+            "name_ru": "Гибкость",
+            "score": 65,
+            "is_declarative": false,
+            "micro_reason": "Допускается ротация специалистов, но перераспределение ролей формализовано.",
+            "evidence_quote": "Ротация инженеров между проектными командами"
+          },
+          {
+            "id": 2,
+            "name_en": "Adaptability",
+            "name_ru": "Адаптивность",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Процесс адаптации четко структурирован по встречам и опросам.",
+            "evidence_quote": "Процесс адаптации поможет вам успешно интегрироваться в компанию"
+          },
+          {
+            "id": 4,
+            "name_en": "Being quick to take advantage of opportunities",
+            "name_ru": "Быстрое использование возможностей",
+            "score": 55,
+            "is_declarative": true,
+            "micro_reason": "Реакция на возможности замедляется из-за необходимости соблюдения процедурных фильтров.",
+            "evidence_quote": "сомнение всегда считается Возражением, если принятие Предложения нарушит любое положение Конституции"
+          },
+          {
+            "id": 5,
+            "name_en": "A willingness to experiment",
+            "name_ru": "Готовность к экспериментам",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Эксперименты заложены в обязательства исследователей технологий.",
+            "evidence_quote": "Создавать и тестировать Proof of Concept (PoC) для проверки гипотез"
+          }
+        ]
+      }
+    },
+    "collaboration": {
+      "score": 77,
+      "summary": "Сотрудничество деперсонализировано и подчинено интересам ролей, а не личным связям.",
+      "modal_content": {
+        "detailed_gap_analysis": "Коллаборация является обязательным процессом: обмен информацией и участие в общих встречах приоритезированы над личными задачами. При этом дружеские связи не поддерживаются системно, фокус смещен на профессиональные роли.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 32,
+            "name_en": "Being team oriented",
+            "name_ru": "Командная ориентация",
+            "score": 80,
+            "is_declarative": false,
+            "micro_reason": "Командное ревью кода является обязательной частью процесса контроля качества.",
+            "evidence_quote": "все члены команды проверяют код друг друга, прежде чем передавать его в тестирование."
+          },
+          {
+            "id": 33,
+            "name_en": "Sharing information freely",
+            "name_ru": "Свободный обмен информацией",
+            "score": 85,
+            "is_declarative": false,
+            "micro_reason": "Каждый сотрудник обязан делиться информацией по первому требованию коллег.",
+            "evidence_quote": "Вы должны делиться информацией о любых Проектах и Следующих действиях"
+          },
+          {
+            "id": 34,
+            "name_en": "Working in collaboration with others",
+            "name_ru": "Совместная работа",
+            "score": 82,
+            "is_declarative": false,
+            "micro_reason": "Участие во встречах и командные приоритеты превалируют над индивидуальными задачами.",
+            "evidence_quote": "Встречи важнее выполнения ваших задач"
+          },
+          {
+            "id": 35,
+            "name_en": "Developing friends at work",
+            "name_ru": "Дружеские отношения",
+            "score": 60,
+            "is_declarative": false,
+            "micro_reason": "Дружба упоминается на этапе онбординга, но общение на встречах строго регламентировано.",
+            "evidence_quote": "Бадди: ваш друг и помощник, который поможет освоиться"
+          }
+        ]
+      }
+    },
+    "customer": {
+      "score": 82,
+      "summary": "Высокая клиентоориентированность через безупречное соблюдение стандартов качества разработки.",
+      "modal_content": {
+        "detailed_gap_analysis": "Фокус на качестве и бездефектности кода. Взаимоотношения с клиентами строятся на основе жесткого соблюдения контрактов, договоров и автоматизированных метрик проверки.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 21,
+            "name_en": "Action orientation",
+            "name_ru": "Ориентация на действие",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Обработка запросов на действия регламентирована правилами сотрудничества.",
+            "evidence_quote": "Вас могут попросить взять в работу определённое Следующее действие или Проект."
+          },
+          {
+            "id": 25,
+            "name_en": "Being results oriented",
+            "name_ru": "Ориентация на результат",
+            "score": 85,
+            "is_declarative": false,
+            "micro_reason": "Результат должен строго соответствовать критериям Definition of Done.",
+            "evidence_quote": "Код поставляется с автоматизированными тестами на всех соответствующих уровнях"
+          },
+          {
+            "id": 27,
+            "name_en": "An emphasis on quality",
+            "name_ru": "Акцент на качестве",
+            "score": 90,
+            "is_declarative": false,
+            "micro_reason": "Качество кода гарантируется жестким прохождением код-ревью и отсутствием багов.",
+            "evidence_quote": "Для реализованного функционала нет дефектов с критическим приоритетом."
+          }
+        ]
+      }
+    },
+    "diversity": {
+      "score": 68,
+      "summary": "Справедливость обеспечивается деперсонализацией и разделением зон влияния.",
+      "modal_content": {
+        "detailed_gap_analysis": "Равенство достигается за счет отсутствия авторитаризма: никто не может диктовать исполнителю роли решения в его домене. Регламент встреч блокирует субъективные эмоциональные оценки, обеспечивая равное право голоса.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 14,
+            "name_en": "Fairness",
+            "name_ru": "Справедливость",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Справедливость поддерживается через регулярную оценку 360.",
+            "evidence_quote": "Насколько партнер открыт к обратной связи и готов к сотрудничеству?"
+          },
+          {
+            "id": 15,
+            "name_en": "Respect for the individual's rights",
+            "name_ru": "Уважение прав личности",
+            "score": 75,
+            "is_declarative": false,
+            "micro_reason": "Права роли защищены суверенностью ее домена от вмешательства коллег.",
+            "evidence_quote": "не вторгаться на территорию соседа без его разрешения."
+          },
+          {
+            "id": 16,
+            "name_en": "Tolerance",
+            "name_ru": "Толерантность",
+            "score": 60,
+            "is_declarative": false,
+            "micro_reason": "Эмоциональная толерантность поддерживается запретом на прямые реакции в раундах.",
+            "evidence_quote": "Запрещаются любые реакции или мнения относительно Предложения."
+          }
+        ]
+      }
+    },
+    "execution": {
+      "score": 84,
+      "summary": "Исполнительская дисциплина основывается на жестких регламентах совещаний и фиксации данных.",
+      "modal_content": {
+        "detailed_gap_analysis": "Процессы планирования, тестирования и ретроспективного анализа ошибок доведены до автоматизма. Совещания лишены хаоса благодаря диктатуре регламента и роли Фасилитатора.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 22,
+            "name_en": "Achievement orientation",
+            "name_ru": "Ориентация на достижения",
+            "score": 75,
+            "is_declarative": false,
+            "micro_reason": "Обязательства по оценке сроков и качеству выполнения задач.",
+            "evidence_quote": "Оценка сроков выполнения поставленного объема работ"
+          },
+          {
+            "id": 24,
+            "name_en": "Having high expectations for performance",
+            "name_ru": "Высокие ожидания",
+            "score": 80,
+            "is_declarative": false,
+            "micro_reason": "Тестировщики вправе вернуть задачу разработчику, если нарушены правила описания.",
+            "evidence_quote": "Команда тестирования вправе вернуть вам задачу, если не будет оставлен комментарий."
+          },
+          {
+            "id": 28,
+            "name_en": "Being analytical",
+            "name_ru": "Аналитичность",
+            "score": 85,
+            "is_declarative": false,
+            "micro_reason": "Процесс тестирования построен на тщательном анализе рисков.",
+            "evidence_quote": "Проведение анализа рисков и выработка плана по снижению рисков"
+          },
+          {
+            "id": 29,
+            "name_en": "Paying attention to detail",
+            "name_ru": "Внимание к деталям",
+            "score": 90,
+            "is_declarative": false,
+            "micro_reason": "Требования к коммитам и интеграции задач строго детализированы.",
+            "evidence_quote": "Каждый коммит должен содержать номер задачи и комментарий"
+          },
+          {
+            "id": 31,
+            "name_en": "Being highly organized",
+            "name_ru": "Высокая организованность",
+            "score": 92,
+            "is_declarative": false,
+            "micro_reason": "Встречи проходят по строгим фазам с запретом на несанкционированные реплики.",
+            "evidence_quote": "Фасилитатор обязан придерживаться следующего регламента."
+          }
+        ]
+      }
+    },
+    "innovation": {
+      "score": 46,
+      "summary": "Инновации жестко контролируются и проверяются на предмет безопасности для компании.",
+      "modal_content": {
+        "detailed_gap_analysis": "Любая инициатива должна доказать свою безопасность. Полноценный риск-тейкинг невозможен из-за обилия фильтров и регламентов. Новые идеи тестируются только в жестких рамках PoC.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 3,
+            "name_en": "Being innovative",
+            "name_ru": "Инновационность",
+            "score": 60,
+            "is_declarative": false,
+            "micro_reason": "Инновации локализованы в профильных ролях исследователей.",
+            "evidence_quote": "Исследование и валидация новых технологий"
+          },
+          {
+            "id": 5,
+            "name_en": "A willingness to experiment",
+            "name_ru": "Готовность к экспериментам",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Экспериментирование с технологиями формализовано.",
+            "evidence_quote": "Создавать и тестировать Proof of Concept (PoC) для проверки гипотез"
+          },
+          {
+            "id": 6,
+            "name_en": "Risk taking",
+            "name_ru": "Готовность к риску",
+            "score": 35,
+            "is_declarative": false,
+            "micro_reason": "Предложение отклоняется, если оно несет потенциальный вред команде.",
+            "evidence_quote": "Достаточно безопасно испытать Предложение, учитывая, что мы можем его пересмотреть"
+          },
+          {
+            "id": 7,
+            "name_en": "Not being constrained by many rules",
+            "name_ru": "Отсутствие жестких ограничений",
+            "score": 20,
+            "is_declarative": false,
+            "micro_reason": "Работа ведется в условиях тотальных конституционных запретов.",
+            "evidence_quote": "Комментировать запрещено. Отвечать запрещено."
+          }
+        ]
+      }
+    },
+    "integrity": {
+      "score": 79,
+      "summary": "Высокая процедурная честность, основанная на личной ответственности ролей.",
+      "modal_content": {
+        "detailed_gap_analysis": "Холакратия переносит честность в правовое русло: правила едины, споры решаются открыто через легализацию 'Напряжений', а за каждым сотрудником закреплена исключительная ответственность за его домен.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 14,
+            "name_en": "Fairness",
+            "name_ru": "Справедливость",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Равные права на выдвижение законодательных предложений.",
+            "evidence_quote": "Любой Член команды может предложить внести изменения в Законодательство"
+          },
+          {
+            "id": 41,
+            "name_en": "Taking individual responsibility",
+            "name_ru": "Личная ответственность",
+            "score": 82,
+            "is_declarative": false,
+            "micro_reason": "Владелец домена несет исключительную ответственность за свою зону деятельности.",
+            "evidence_quote": "Владеть Доменом означает нести ответственность за соответствующую область"
+          },
+          {
+            "id": 42,
+            "name_en": "Confronting conflict directly",
+            "name_ru": "Прямое разрешение конфликтов",
+            "score": 80,
+            "is_declarative": false,
+            "micro_reason": "Сотрудников обучают аргументированно отстаивать свою позицию и предлагать альтернативы.",
+            "evidence_quote": "Опишите случай, когда вы аргументированно отказали в запросе"
+          },
+          {
+            "id": 54,
+            "name_en": "Having a clear guiding philosophy",
+            "name_ru": "Четкая философия",
+            "score": 85,
+            "is_declarative": false,
+            "micro_reason": "Философия разработки явно базируется на SOLID и чистой архитектуре.",
+            "evidence_quote": "В процессе разработки мы руководствуемся принципами SOLID и Clean architecture."
+          }
+        ]
+      }
+    },
+    "performance": {
+      "score": 69,
+      "summary": "Высокая требовательность к соблюдению правил и регламентов при отсутствии данных о поощрениях за сверхусилия.",
+      "modal_content": {
+        "detailed_gap_analysis": "Компания требует безупречного соблюдения DoD и исключения дефектов. При этом культура не ориентирована на сверхусилия или переработки; доминирует стремление к стабильности и отсутствию ошибок.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 22,
+            "name_en": "Achievement orientation",
+            "name_ru": "Ориентация на достижения",
+            "score": 75,
+            "is_declarative": false,
+            "micro_reason": "Метрики результативности и сроков встроены в тестирование.",
+            "evidence_quote": "Оценка сроков выполнения поставленного объема работ"
+          },
+          {
+            "id": 23,
+            "name_en": "Being demanding",
+            "name_ru": "Требовательность",
+            "score": 80,
+            "is_declarative": false,
+            "micro_reason": "Строгий контроль над качеством и дефектами со стороны тестирования.",
+            "evidence_quote": "Команда тестирования вправе вернуть вам задачу, если не будет оставлен комментарий."
+          },
+          {
+            "id": 24,
+            "name_en": "Having high expectations for performance",
+            "name_ru": "Высокие ожидания",
+            "score": 80,
+            "is_declarative": false,
+            "micro_reason": "Высокие стандарты качества и бездефектности поставляемого ПО.",
+            "evidence_quote": "Для реализованного функционала нет дефектов с критическим приоритетом."
+          },
+          {
+            "id": 26,
+            "name_en": "High pay for good performance",
+            "name_ru": "Высокая оплата за результат",
+            "score": 40,
+            "is_declarative": true,
+            "micro_reason": "В регламентах финансовая мотивация детально не раскрывается.",
+            "evidence_quote": "встречи по ЗП"
+          }
+        ]
+      }
+    },
+    "respect": {
+      "score": 68,
+      "summary": "Уважение базируется на соблюдении ролевых границ коллег и взаимной поддержке.",
+      "modal_content": {
+        "detailed_gap_analysis": "Корпоративное уважение носит юридический характер: домены сотрудников неприкосновенны. Наставничество и поддержка оказываются в рамках прописанных адаптационных процедур.",
+        "contributing_ocp_parameters": [
+          {
+            "id": 14,
+            "name_en": "Fairness",
+            "name_ru": "Справедливость",
+            "score": 70,
+            "is_declarative": false,
+            "micro_reason": "Равная обратная связь и оценка на ретроспективах.",
+            "evidence_quote": "Насколько партнер открыт к обратной связи и готов к сотрудничеству?"
+          },
+          {
+            "id": 18,
+            "name_en": "Being people oriented",
+            "name_ru": "Ориентация на людей",
+            "score": 65,
+            "is_declarative": false,
+            "micro_reason": "Сотрудники рассматриваются как исполнители ролей с оптимальной нагрузкой.",
+            "evidence_quote": "Оптимальная нагрузка на инженеров .Net направления"
+          },
+          {
+            "id": 17,
+            "name_en": "Being supportive",
+            "name_ru": "Поддержка",
+            "score": 75,
+            "is_declarative": false,
+            "micro_reason": "Наставничество и поддержка Бадди на этапе адаптации.",
+            "evidence_quote": "Бадди: ваш друг и помощник, который поможет освоиться"
+          },
+          {
+            "id": 16,
+            "name_en": "Tolerance",
+            "name_ru": "Толерантность",
+            "score": 60,
+            "is_declarative": false,
+            "micro_reason": "Толерантность поддерживается за счет жесткой модерации встреч.",
+            "evidence_quote": "Запрещаются любые реакции или мнения относительно Предложения."
+          },
+          {
+            "id": 19,
+            "name_en": "Opportunities for professional growth",
+            "name_ru": "Возможности для роста",
+            "score": 70,
+            "is_declarative": true,
+            "micro_reason": "Рост отслеживается на встречах 360, но пути не детализированы.",
+            "evidence_quote": "Как вы оцениваете профессионализм партнера в его/ее области?"
+          }
+        ]
+      }
+    }
+  },
+  "raw_ocp_profile": [
+    {
+      "id": 1,
+      "name_en": "Flexibility",
+      "score": 65,
+      "is_declarative": false
+    },
+    {
+      "id": 2,
+      "name_en": "Adaptability",
+      "score": 70,
+      "is_declarative": false
+    },
+    {
+      "id": 3,
+      "name_en": "Being innovative",
+      "score": 60,
+      "is_declarative": false
+    },
+    {
+      "id": 4,
+      "name_en": "Being quick to take advantage of opportunities",
+      "score": 55,
+      "is_declarative": true
+    },
+    {
+      "id": 5,
+      "name_en": "A willingness to experiment",
+      "score": 70,
+      "is_declarative": false
+    },
+    {
+      "id": 6,
+      "name_en": "Risk taking",
+      "score": 35,
+      "is_declarative": false
+    },
+    {
+      "id": 7,
+      "name_en": "Not being constrained by many rules",
+      "score": 20,
+      "is_declarative": false
+    },
+    {
+      "id": 8,
+      "name_en": "Stability",
+      "score": 80,
+      "is_declarative": false
+    },
+    {
+      "id": 9,
+      "name_en": "Predictability",
+      "score": 85,
+      "is_declarative": false
+    },
+    {
+      "id": 10,
+      "name_en": "Being careful",
+      "score": 85,
+      "is_declarative": false
+    },
+    {
+      "id": 11,
+      "name_en": "Being rule oriented",
+      "score": 95,
+      "is_declarative": false
+    },
+    {
+      "id": 12,
+      "name_en": "Security of employment",
+      "score": 55,
+      "is_declarative": true
+    },
+    {
+      "id": 13,
+      "name_en": "Low level of conflict",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 14,
+      "name_en": "Fairness",
+      "score": 70,
+      "is_declarative": false
+    },
+    {
+      "id": 15,
+      "name_en": "Respect for the individual's rights",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 16,
+      "name_en": "Tolerance",
+      "score": 60,
+      "is_declarative": false
+    },
+    {
+      "id": 17,
+      "name_en": "Being supportive",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 18,
+      "name_en": "Being people oriented",
+      "score": 65,
+      "is_declarative": false
+    },
+    {
+      "id": 19,
+      "name_en": "Opportunities for professional growth",
+      "score": 70,
+      "is_declarative": true
+    },
+    {
+      "id": 20,
+      "name_en": "Offers praise for good performance",
+      "score": 50,
+      "is_declarative": true
+    },
+    {
+      "id": 21,
+      "name_en": "Action orientation",
+      "score": 70,
+      "is_declarative": false
+    },
+    {
+      "id": 22,
+      "name_en": "Achievement orientation",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 23,
+      "name_en": "Being demanding",
+      "score": 80,
+      "is_declarative": false
+    },
+    {
+      "id": 24,
+      "name_en": "Having high expectations for performance",
+      "score": 80,
+      "is_declarative": false
+    },
+    {
+      "id": 25,
+      "name_en": "Being results oriented",
+      "score": 85,
+      "is_declarative": false
+    },
+    {
+      "id": 26,
+      "name_en": "High pay for good performance",
+      "score": 40,
+      "is_declarative": true
+    },
+    {
+      "id": 27,
+      "name_en": "An emphasis on quality",
+      "score": 90,
+      "is_declarative": false
+    },
+    {
+      "id": 28,
+      "name_en": "Being analytical",
+      "score": 85,
+      "is_declarative": false
+    },
+    {
+      "id": 29,
+      "name_en": "Paying attention to detail",
+      "score": 90,
+      "is_declarative": false
+    },
+    {
+      "id": 30,
+      "name_en": "Being precise",
+      "score": 85,
+      "is_declarative": false
+    },
+    {
+      "id": 31,
+      "name_en": "Being highly organized",
+      "score": 92,
+      "is_declarative": false
+    },
+    {
+      "id": 32,
+      "name_en": "Being team oriented",
+      "score": 80,
+      "is_declarative": false
+    },
+    {
+      "id": 33,
+      "name_en": "Sharing information freely",
+      "score": 85,
+      "is_declarative": false
+    },
+    {
+      "id": 34,
+      "name_en": "Working in collaboration with others",
+      "score": 82,
+      "is_declarative": false
+    },
+    {
+      "id": 35,
+      "name_en": "Developing friends at work",
+      "score": 60,
+      "is_declarative": false
+    },
+    {
+      "id": 36,
+      "name_en": "Fitting in",
+      "score": 70,
+      "is_declarative": false
+    },
+    {
+      "id": 37,
+      "name_en": "Being competitive",
+      "score": 45,
+      "is_declarative": true
+    },
+    {
+      "id": 38,
+      "name_en": "Being aggressive",
+      "score": 30,
+      "is_declarative": false
+    },
+    {
+      "id": 39,
+      "name_en": "Decisiveness",
+      "score": 60,
+      "is_declarative": false
+    },
+    {
+      "id": 40,
+      "name_en": "Taking initiative",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 41,
+      "name_en": "Taking individual responsibility",
+      "score": 82,
+      "is_declarative": false
+    },
+    {
+      "id": 42,
+      "name_en": "Confronting conflict directly",
+      "score": 80,
+      "is_declarative": false
+    },
+    {
+      "id": 43,
+      "name_en": "Working long hours",
+      "score": 40,
+      "is_declarative": false
+    },
+    {
+      "id": 44,
+      "name_en": "Being reflective",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 45,
+      "name_en": "Autonomy",
+      "score": 65,
+      "is_declarative": false
+    },
+    {
+      "id": 46,
+      "name_en": "Emphasizing a single culture",
+      "score": 80,
+      "is_declarative": false
+    },
+    {
+      "id": 47,
+      "name_en": "Informality",
+      "score": 35,
+      "is_declarative": false
+    },
+    {
+      "id": 48,
+      "name_en": "Being easy going",
+      "score": 40,
+      "is_declarative": false
+    },
+    {
+      "id": 49,
+      "name_en": "Being calm",
+      "score": 75,
+      "is_declarative": false
+    },
+    {
+      "id": 50,
+      "name_en": "Enthusiasm for the job",
+      "score": 65,
+      "is_declarative": true
+    },
+    {
+      "id": 51,
+      "name_en": "Being distinctive",
+      "score": 70,
+      "is_declarative": false
+    },
+    {
+      "id": 52,
+      "name_en": "Having a good reputation",
+      "score": 65,
+      "is_declarative": true
+    },
+    {
+      "id": 53,
+      "name_en": "Being socially responsible",
+      "score": 45,
+      "is_declarative": true
+    },
+    {
+      "id": 54,
+      "name_en": "Having a clear guiding philosophy",
+      "score": 85,
+      "is_declarative": false
+    }
+  ],
+  "risks_and_weaknesses": [
+    {
+      "risk_title": "Паралич инициативы из-за гиперрегламентации",
+      "severity": "Critical",
+      "description": "Сложный алгоритм внесения законодательных изменений и жесткие запреты на несанкционированные дискуссии во время раундов могут подавить спонтанное генерирование идей творческой частью команды."
+    },
+    {
+      "risk_title": "Сложность адаптации зрелых специалистов из традиционных структур",
+      "severity": "High",
+      "description": "Специалисты, привыкшие к прямому авторитарному управлению или свободному неформальному формату взаимодействия, могут испытывать высокий уровень стресса при переходе к ролевой деперсонализованной модели."
+    }
+  ],
+  "talentmind_evaluation_prism": {
+    "target_cultural_fit": "Процессные сухие профессионалы, способные работать в условиях строгой регламентации встреч, уважающие границы ролей и доменов, не требующие авторитарного лидерства.",
+    "diagnostic_questions": [
+      {
+        "question": "Что для вас значит «помочь коллеге, не нарушая границ своей роли»? Приведите пример из опыта.",
+        "eval_criteria": "Кандидат должен понимать границы своей роли, помогать без навязчивости и вмешательства в чужую зону ответственности (Домен).",
+        "target_indicator": "Уважение к автономности чужих ролей, понимание вреда хаотичного вмешательства в чужую работу.",
+        "red_flag": "Гиперопека, попытки забрать чужие задачи без согласования, размывание личной ответственности."
+      },
+      {
+        "question": "Если в команде «висит» важная задача, но на неё нет назначенной роли — как вы решите, брать ли её на себя?",
+        "eval_criteria": "Оценка способности к самоорганизации по правилам, а не на эмоциях. Понимание принципа закрытия незанятых ролей.",
+        "target_indicator": "Действия по регламенту: инициация назначения роли или временного замещения через Лидера команды.",
+        "red_flag": "Позиция 'это не мое дело' или, наоборот, хаотичный захват задачи без фиксации роли."
+      },
+      {
+        "question": "Как вы расставляете приоритеты, когда одновременно приходят запросы от нескольких ролей и есть свои дедлайны?",
+        "eval_criteria": "Понимание правил приоритизации холакратии, где обработка входящих запросов выше выполнения личных задач.",
+        "target_indicator": "Использование установленных в конституции правил: сначала обработка входящих, затем дедлайны и встречи.",
+        "red_flag": "Субъективное деление задач на 'интересные' и 'неинтересные', хаотичный выбор без опоры на регламент."
+      }
+    ],
+    "red_flags": [
+      "Непереносимость жестких правил общения (например, 'Отвечать запрещено' во время раундов).",
+      "Потребность в харизматичном лидере-покровителе, принимающем решения единолично.",
+      "Хаотичный стиль работы, пренебрежение документированием и чек-листами."
+    ]
+  }
+}
