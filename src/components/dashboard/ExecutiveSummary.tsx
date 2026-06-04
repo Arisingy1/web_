@@ -38,7 +38,7 @@ export function ExecutiveSummary({ summary }: { summary: CultureReportData['exec
               Доминирующие ценности
             </h3>
             <div className="flex flex-col gap-2">
-              {summary.dominant_values.map((value, idx) => (
+              {(summary.dominant_values ?? []).map((value, idx) => (
                 <div
                   key={idx}
                   className="flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 shadow-sm dark:border-slate-600 dark:bg-slate-800"

@@ -23,6 +23,13 @@ export interface RiskItem {
   description: string;
 }
 
+export interface CultureGapItem {
+  dimension: string;
+  declarative_value_source: string;
+  operational_reality_source: string;
+  gap_description: string;
+}
+
 export interface DiagnosticQuestion {
   question: string;
   eval_criteria: string;
@@ -30,10 +37,21 @@ export interface DiagnosticQuestion {
   red_flag: string;
 }
 
+export interface KeyBehavioralIndicator {
+  indicator: string;
+  how_it_manifests: string;
+}
+
+export interface StructuredRedFlag {
+  flag: string;
+  reason_for_friction: string;
+}
+
 export interface TalentmindEvaluationPrism {
   target_cultural_fit: string;
-  diagnostic_questions: DiagnosticQuestion[];
-  red_flags: string[];
+  diagnostic_questions?: DiagnosticQuestion[];
+  key_behavioral_indicators?: KeyBehavioralIndicator[];
+  red_flags?: Array<string | StructuredRedFlag>;
 }
 
 export interface CultureReportData {
@@ -53,9 +71,10 @@ export interface CultureReportData {
     culture_uniqueness: string;
     culture_type: string;
     key_findings?: string;
-    dominant_values: string[];
+    dominant_values?: string[];
     cultural_contradictions?: string[];
   };
+  culture_gap_analysis?: CultureGapItem[];
   big_nine_detailed_analysis: Record<string, BigNineItem>;
   raw_ocp_profile: Array<{ id: number; name_en: string; score: number; is_declarative: boolean }>;
   risks_and_weaknesses: RiskItem[];
@@ -63,3 +82,9 @@ export interface CultureReportData {
 }
 
 export type ActiveBigNine = { key: string } & BigNineItem;
+
+export function isStructuredRedFlag(
+  item: string | StructuredRedFlag
+): item is StructuredRedFlag {
+  return typeof item === 'object' && item !== null && 'flag' in item;
+}
