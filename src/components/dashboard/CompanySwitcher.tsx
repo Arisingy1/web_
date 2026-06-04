@@ -2,7 +2,7 @@ export type CompanyId = 'inostudio' | 'inostudio_kb' | 'webpraktik';
 
 const COMPANIES: { id: CompanyId; label: string }[] = [
   { id: 'inostudio', label: 'Inostudio' },
-  { id: 'inostudio_kb', label: 'Inostudio KB' },
+  { id: 'inostudio_kb', label: 'Inostudio' },
   { id: 'webpraktik', label: 'Вебпрактик' },
 ];
 

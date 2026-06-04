@@ -1,7 +1,7 @@
 {
   "artifact_metadata": {
     "analyzed_documents": [
-      "Inostudio Holacracy KB",
+      "Inostudio Holacracy",
       "Onboarding Guide",
       "Time Reporting & DoD",
       "Interview Transcripts (x5)",
@@ -11,12 +11,12 @@
     "confidence_score": 95
   },
   "general_info": {
-    "company_name": "Inostudio KB",
+    "company_name": "Inostudio",
     "industry": "IT / Tech",
     "tone_of_voice": "Формальный / Холакратический"
   },
   "authenticity_index": "High",
-  "authenticity_reason": "Документы KB, онбординг, интервью и 360 согласованы; декларации доменов подкреплены операционными регламентами тайм-трекинга и DoD.",
+  "authenticity_reason": "Документы, онбординг, интервью и 360 согласованы; декларации доменов подкреплены операционными регламентами тайм-трекинга и DoD.",
   "executive_summary": {
     "culture_uniqueness": "Специфика культуры Inostudio заключается в холакратическом подходе: жестком распределении ролей, доменов и зон ответственности при отсутствии классических managers. Самоорганизация сочетается с высокой регламентацией процессов, совещаний и ежедневного тайм-трекинга.",
     "culture_type": "Холакратическая процессно-нормативная культура",
@@ -57,7 +57,7 @@
             "score": 55,
             "is_declarative": true,
             "micro_reason": "Процессы изменений регламентированы Конституцией.",
-            "evidence_quote": "[KB Домены] Изменить или отменить передачу прав может Команда на Законодательной встрече."
+            "evidence_quote": "[Домены] Изменить или отменить передачу прав может Команда на Законодательной встрече."
           },
           {
             "id": 2,
