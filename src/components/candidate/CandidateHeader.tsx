@@ -1,4 +1,4 @@
-import { Calendar, Mic, User } from 'lucide-react';
+import { Calendar, FileText, User } from 'lucide-react';
 import { getVerdictStyles } from '../../lib/verdictColors';
 import type { CandidateReportData } from '../../types/candidateReport';
 
@@ -23,10 +23,10 @@ export function CandidateHeader({ data }: { data: CandidateReportData }) {
               <Calendar className="h-4 w-4" aria-hidden />
               Интервью: {report_metadata.interview_date}
             </span>
-            {report_metadata.input_artifacts.has_audio && (
+            {report_metadata.input_artifacts.has_transcript && (
               <span className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 dark:border-slate-600 dark:bg-slate-900/40">
-                <Mic className="h-3.5 w-3.5" aria-hidden />
-                Аудио + транскрипт
+                <FileText className="h-3.5 w-3.5" aria-hidden />
+                Транскрипт
               </span>
             )}
           </div>
