@@ -14,7 +14,7 @@ const data = {
   big_nine_detailed_analysis: bigNine,
   raw_ocp_profile: rawOcp,
   general_info: {
-    company_name: 'Inostudio V5',
+    company_name: 'Inostudio',
     industry: 'IT / Tech',
     tone_of_voice: 'Формальный / Регламентированный',
   },
