@@ -9,9 +9,10 @@ const SIGNAL_LABELS: Record<string, string> = {
   pauses_hesitations: 'Паузы',
   intonation_variability: 'Интонация',
   voice_tension_breathing: 'Напряжение',
-  dominance_interruptions: 'Доминирование',
   latency_before_answer: 'Латентность',
 };
+
+const HIDDEN_SIGNALS = new Set(['dominance_interruptions']);
 
 export function SoftSkillModal({ skill, onClose }: { skill: ActiveSoftSkill; onClose: () => void }) {
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -105,7 +106,9 @@ export function SoftSkillModal({ skill, onClose }: { skill: ActiveSoftSkill; onC
           <div className="rounded-xl border border-indigo-200 bg-indigo-50/50 p-4 dark:border-indigo-800 dark:bg-indigo-950/30">
             <p className="mb-3 text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Аудио-наблюдения</p>
             <p className="mb-3 text-sm text-indigo-900 dark:text-indigo-100">{content.audio_observations.summary}</p>
-            {content.audio_observations.observations.map((obs, idx) => (
+            {content.audio_observations.observations
+              .filter((obs) => !HIDDEN_SIGNALS.has(obs.signal))
+              .map((obs, idx) => (
               <div key={idx} className="mb-2 rounded-lg border border-indigo-100 bg-white/60 p-3 last:mb-0 dark:border-indigo-900 dark:bg-slate-800/60">
                 <p className="text-sm font-medium text-slate-800 dark:text-slate-100">
                   {SIGNAL_LABELS[obs.signal] ?? obs.signal}: {obs.value}
