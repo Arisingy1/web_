@@ -27,9 +27,9 @@ export function ConfidenceGauge({ value }: { value: number }) {
         <span className="absolute text-lg font-bold text-slate-800 dark:text-slate-100">{value}</span>
       </div>
       <span className="mt-2 text-center text-xs font-medium leading-tight text-slate-500 dark:text-slate-400">
-        Confidence
+        Индекс
         <br />
-        Score
+        уверенности
       </span>
     </div>
   );

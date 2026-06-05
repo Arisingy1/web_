@@ -13,7 +13,7 @@ export function BigNineGrid({
 
   return (
     <section>
-      <h2 className="mb-6 text-xl font-bold text-slate-800 dark:text-slate-100">Анализ измерений Big Nine</h2>
+      <h2 className="mb-6 text-xl font-bold text-slate-800 dark:text-slate-100">Анализ измерений</h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {orderedKeys.map((key) => (
           <BigNineCard

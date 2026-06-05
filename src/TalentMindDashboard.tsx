@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { BigNineGrid } from './components/dashboard/BigNineGrid';
 import { BigNineModal } from './components/dashboard/BigNineModal';
-import { CompanySwitcher, type CompanyId } from './components/dashboard/CompanySwitcher';
+import { PageSwitcher, type PageId } from './components/PageSwitcher';
 import { ExecutiveSummary } from './components/dashboard/ExecutiveSummary';
 import { HeaderSection } from './components/dashboard/HeaderSection';
 import { CultureGapAnalysisSection } from './components/dashboard/CultureGapAnalysisSection';
@@ -12,12 +12,12 @@ import type { ActiveBigNine, CultureReportData } from './types/cultureReport';
 
 export default function TalentMindDashboard({
   data,
-  company,
-  onCompanyChange,
+  page,
+  onPageChange,
 }: {
   data: CultureReportData | null;
-  company: CompanyId;
-  onCompanyChange: (id: CompanyId) => void;
+  page: PageId;
+  onPageChange: (id: PageId) => void;
 }) {
   const [activeBigNine, setActiveBigNine] = useState<ActiveBigNine | null>(null);
   const [darkMode, setDarkMode] = useState(false);
@@ -35,7 +35,7 @@ export default function TalentMindDashboard({
       <div className="min-h-screen bg-slate-50 p-4 font-sans text-slate-900 dark:bg-slate-900 dark:text-slate-100 md:p-8">
         <div className="mx-auto max-w-7xl space-y-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <CompanySwitcher active={company} onChange={onCompanyChange} />
+            <PageSwitcher active={page} onChange={onPageChange} />
             <button
               type="button"
               onClick={() => setDarkMode((d) => !d)}

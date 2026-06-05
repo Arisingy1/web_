@@ -5,6 +5,8 @@ export interface OcpParameter {
   score: number;
   is_declarative: boolean;
   micro_reason?: string;
+  score_logic_chain?: string;
+  score_logic_bounds?: string;
   evidence_quote?: string | null;
 }
 
@@ -28,6 +30,8 @@ export interface CultureGapItem {
   declarative_value_source: string;
   operational_reality_source: string;
   gap_description: string;
+  downgrade_logic_chain?: string;
+  score_logic_bounds?: string;
 }
 
 export interface DiagnosticQuestion {

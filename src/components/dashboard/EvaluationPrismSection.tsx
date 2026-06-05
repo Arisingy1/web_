@@ -10,7 +10,7 @@ export function EvaluationPrismSection({ prism }: { prism: TalentmindEvaluationP
   return (
     <section className="rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50/80 to-indigo-50/50 p-6 shadow-sm dark:border-violet-900/50 dark:from-violet-950/30 dark:to-indigo-950/20 md:p-8">
       <h2 className="mb-6 text-xl font-bold text-slate-800 dark:text-slate-100">
-        TalentMind Evaluation Prism
+        Призма оценки TalentMind
       </h2>
 
       <div className="mb-8 rounded-xl border border-indigo-200 bg-white/80 p-5 dark:border-indigo-800 dark:bg-slate-800/60">
@@ -82,7 +82,7 @@ export function EvaluationPrismSection({ prism }: { prism: TalentmindEvaluationP
 
       {redFlags.length > 0 && (
         <>
-          <h3 className="mb-3 text-sm font-bold uppercase tracking-wide text-slate-500">Red flags</h3>
+          <h3 className="mb-3 text-sm font-bold uppercase tracking-wide text-slate-500">Красные флаги</h3>
           <ul className="space-y-3">
             {redFlags.map((flag, idx) =>
               isStructuredRedFlag(flag) ? (

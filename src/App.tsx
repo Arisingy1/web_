@@ -1,24 +1,42 @@
 import { useState } from 'react';
+import CandidateReportDashboard from './CandidateReportDashboard';
 import TalentMindDashboard from './TalentMindDashboard';
-import inostudioV2Data from './data/inostudio-v2.json';
-import inostudioKbData from './data/inostudio-kb.json';
-import type { CompanyId } from './components/dashboard/CompanySwitcher';
+import { isCandidatePage, type CandidatePageId, type PageId } from './components/PageSwitcher';
+import candidateAlexData from './data/candidate-alex.json';
+import candidateMaximData from './data/candidate-maxim.json';
+import candidateSergeyData from './data/candidate-sergey.json';
+import inostudioV5Data from './data/inostudio-v5.json';
+import type { CandidateReportData } from './types/candidateReport';
 import type { CultureReportData } from './types/cultureReport';
 
-const DATASETS: Record<CompanyId, CultureReportData> = {
-  inostudio_kb: inostudioKbData as CultureReportData,
-  inostudio_v2: inostudioV2Data as CultureReportData,
+const INOSTUDIO_DATA = inostudioV5Data as CultureReportData;
+
+const CANDIDATE_DATASETS: Record<CandidatePageId, CandidateReportData> = {
+  candidate_sergey: candidateSergeyData as CandidateReportData,
+  candidate_maxim: candidateMaximData as CandidateReportData,
+  candidate_alex: candidateAlexData as CandidateReportData,
 };
 
 function App() {
-  const [company, setCompany] = useState<CompanyId>('inostudio_kb');
+  const [page, setPage] = useState<PageId>('inostudio_v5');
+
+  if (isCandidatePage(page)) {
+    return (
+      <CandidateReportDashboard
+        key={page}
+        data={CANDIDATE_DATASETS[page]}
+        page={page}
+        onPageChange={setPage}
+      />
+    );
+  }
 
   return (
     <TalentMindDashboard
-      key={company}
-      data={DATASETS[company]}
-      company={company}
-      onCompanyChange={setCompany}
+      key={page}
+      data={INOSTUDIO_DATA}
+      page={page}
+      onPageChange={setPage}
     />
   );
 }
